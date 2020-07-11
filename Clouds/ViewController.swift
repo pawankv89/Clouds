@@ -1,25 +1,14 @@
-# Clouds
- 
-## Clouds Moving around screen
+//
+//  ViewController.swift
+//  Clouds
+//
+//  Created by Pawan kumar on 10/06/20.
+//  Copyright © 2020 Pawan Kumar. All rights reserved.
+//
 
-Added Some screens here.
-
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_1.png)
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_2.png)
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_3.png)
-
-
-## Usage
-
-#### Controller
-
-```swift
-
-
-import Foundation
 import UIKit
 
-class SplashScreen: UIViewController {
+class ViewController: UIViewController {
     
     @IBOutlet weak var aImageView: UIImageView!
     @IBOutlet weak var bImageView: UIImageView!
@@ -30,10 +19,7 @@ class SplashScreen: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            // your function here
-            self.moveToVC()
-        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -68,36 +54,6 @@ class SplashScreen: UIViewController {
    
         })
     }
-    
-   @objc func moveToVC() -> () {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let initialViewController = storyboard.instantiateViewController(withIdentifier: "ViewController")
-
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = initialViewController
-        appDelegate.window?.makeKeyAndVisible()
-        
-    }
 
 }
-
-
-```
-
-## Requirements
-
-### Build
-
-Xcode Version 11.3 (11C29), iOS 13.2.0 SDK
-
-## License
-
-This code is distributed under the terms and conditions of the [MIT license](LICENSE).
-
-## Change-log
-
-A brief summary of each this release can be found in the [CHANGELOG](CHANGELOG.mdown). 
-
-
 

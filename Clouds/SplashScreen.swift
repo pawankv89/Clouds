@@ -1,20 +1,10 @@
-# Clouds
- 
-## Clouds Moving around screen
-
-Added Some screens here.
-
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_1.png)
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_2.png)
-![](https://github.com/pawankv89/Clouds/blob/master/images/screen_3.png)
-
-
-## Usage
-
-#### Controller
-
-```swift
-
+//
+//  SplashScreen.swift
+//  Clouds
+//
+//  Created by Pawan kumar on 11/06/20.
+//  Copyright © 2020 Pawan Kumar. All rights reserved.
+//
 
 import Foundation
 import UIKit
@@ -81,23 +71,4 @@ class SplashScreen: UIViewController {
     }
 
 }
-
-
-```
-
-## Requirements
-
-### Build
-
-Xcode Version 11.3 (11C29), iOS 13.2.0 SDK
-
-## License
-
-This code is distributed under the terms and conditions of the [MIT license](LICENSE).
-
-## Change-log
-
-A brief summary of each this release can be found in the [CHANGELOG](CHANGELOG.mdown). 
-
-
 
